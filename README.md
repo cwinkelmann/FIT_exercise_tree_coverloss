@@ -1,0 +1,52 @@
+# exercise programming 2 2021-11-16
+Python for Data Analysis - FIT Winter Semester 2021
+
+## Global Forest Watch data
+
+The Global Forest Watch project shows many aspects of land use and change
+worldwide. It monitors very big areas across many countries and can be useful
+to support decisions in conservation and climate policy, for example.
+It is possible to access the underlying datasets in Global Forest Watch
+through their data portal.
+
+1. For this exercise work in pairs. Use the breakout rooms at the BigBlueButton videoconference room. One person can share the screen and the
+other supports. Change roles as needed. This is particularly useful when
+programming, since the second person can look up specific syntax or watch
+for errors in the code.
+2. Visit the guide about how to download data from the open data portal on
+Global Forest Watch. Take some time to explore the datasets and agree
+on a topic that is interesting to you. It can be about a single country, a
+region, or a topic worldwide.
+3. Download the CSV files about the selected topic and explore them using
+a raw text editor, like for example Notepad++.
+4. Agree with your partner about an interesting graph that can be created
+with the data. You can also recreate one of the graphs shown in the
+website.
+5. Create the graph in a new jupyter notebook. You need to import the data
+using pandas and plot using matpotlib.
+6. Add sensible titles and explanations to your notebook, like for example a
+link to the data source and access date.
+
+## Execution of the exercise
+Data is obtained from: [link](https://globalforestwatch.org/dashboards/global/?category=summary&dashboardPrompts=eyJzaG93UHJvbXB0cyI6dHJ1ZSwicHJvbXB0c1ZpZXdlZCI6WyJzdWJzY3JpYmVUb0FyZWEiLCJyZWNlbnRJbWFnZXJ5IiwiZG93bmxvYWREYXNoYm9hcmRTdGF0cyIsInNoYXJlV2lkZ2V0Il0sInNldHRpbmdzIjp7InNob3dQcm9tcHRzIjp0cnVlLCJwcm9tcHRzVmlld2VkIjpbInN1YnNjcmliZVRvQXJlYSIsInJlY2VudEltYWdlcnkiLCJkb3dubG9hZERhc2hib2FyZFN0YXRzIl0sInNldHRpbmdzIjp7InNob3dQcm9tcHRzIjp0cnVlLCJwcm9tcHRzVmlld2VkIjpbInN1YnNjcmliZVRvQXJlYSIsInJlY2VudEltYWdlcnkiLCJkb3dubG9hZERhc2hib2FyZFN0YXRzIl0sInNldHRpbmdzIjp7InNob3dQcm9tcHRzIjp0cnVlLCJwcm9tcHRzVmlld2VkIjpbInN1YnNjcmliZVRvQXJlYSIsInJlY2VudEltYWdlcnkiLCJkb3dubG9hZERhc2hib2FyZFN0YXRzIl0sInNldHRpbmdzIjp7InNob3dQcm9tcHRzIjp0cnVlLCJwcm9tcHRzVmlld2VkIjpbInN1YnNjcmliZVRvQXJlYSIsInJlY2VudEltYWdlcnkiLCJkb3dubG9hZERhc2hib2FyZFN0YXRzIl0sInNldHRpbmdzIjp7InNob3dQcm9tcHRzIjp0cnVlLCJwcm9tcHRzVmlld2VkIjpbInN1YnNjcmliZVRvQXJlYSIsInJlY2VudEltYWdlcnkiLCJkb3dubG9hZERhc2hib2FyZFN0YXRzIl0sInNldHRpbmdzIjp7InNob3dQcm9tcHRzIjp0cnVlLCJwcm9tcHRzVmlld2VkIjpbInN1YnNjcmliZVRvQXJlYSIsInJlY2VudEltYWdlcnkiXSwic2V0dGluZ3MiOnsic2hvd1Byb21wdHMiOnRydWUsInByb21wdHNWaWV3ZWQiOltdLCJzZXR0aW5ncyI6eyJvcGVuIjpmYWxzZSwic3RlcEluZGV4IjowLCJzdGVwc0tleSI6IiJ9LCJvcGVuIjp0cnVlLCJzdGVwc0tleSI6ImRvd25sb2FkRGFzaGJvYXJkU3RhdHMifSwib3BlbiI6dHJ1ZSwic3RlcEluZGV4IjowLCJzdGVwc0tleSI6ImRvd25sb2FkRGFzaGJvYXJkU3RhdHMifSwic3RlcHNLZXkiOiIiLCJvcGVuIjpmYWxzZSwic3RlcEluZGV4IjowLCJmb3JjZSI6dHJ1ZX0sInN0ZXBzS2V5IjoiIiwib3BlbiI6ZmFsc2UsInN0ZXBJbmRleCI6MCwiZm9yY2UiOnRydWV9LCJzdGVwc0tleSI6ImRvd25sb2FkRGFzaGJvYXJkU3RhdHMiLCJzdGVwSW5kZXgiOi0xLCJmb3JjZSI6dHJ1ZX0sInN0ZXBzS2V5IjoiZG93bmxvYWREYXNoYm9hcmRTdGF0cyIsInN0ZXBJbmRleCI6LTEsImZvcmNlIjp0cnVlfSwib3BlbiI6dHJ1ZSwic3RlcEluZGV4IjowLCJzdGVwc0tleSI6InNoYXJlV2lkZ2V0In0sInN0ZXBzS2V5Ijoic2hhcmVXaWRnZXQiLCJmb3JjZSI6dHJ1ZX0%3D&location=WyJnbG9iYWwiXQ%3D%3D&map=eyJjZW50ZXIiOnsibGF0Ijo0Ni42OTMxOTg5NDI1MzM4OSwibG5nIjo1LjM3OTM3NDkxMzEwMjM1NH0sInpvb20iOjQuMjA2ODExODA2NTI1NTczNSwiZGF0YXNldHMiOlt7Im9wYWNpdHkiOjAuNywidmlzaWJpbGl0eSI6dHJ1ZSwiZGF0YXNldCI6InByaW1hcnktZm9yZXN0cyIsImxheWVycyI6WyJwcmltYXJ5LWZvcmVzdHMtMjAwMSJdfSx7ImRhdGFzZXQiOiJwb2xpdGljYWwtYm91bmRhcmllcyIsImxheWVycyI6WyJkaXNwdXRlZC1wb2xpdGljYWwtYm91bmRhcmllcyIsInBvbGl0aWNhbC1ib3VuZGFyaWVzIl0sImJvdW5kYXJ5Ijp0cnVlLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlfSx7ImRhdGFzZXQiOiJ0cmVlLWNvdmVyLWxvc3MiLCJsYXllcnMiOlsidHJlZS1jb3Zlci1sb3NzIl0sIm9wYWNpdHkiOjEsInZpc2liaWxpdHkiOnRydWUsInRpbWVsaW5lUGFyYW1zIjp7InN0YXJ0RGF0ZSI6IjIwMDItMDEtMDEiLCJlbmREYXRlIjoiMjAyMC0xMi0zMSIsInRyaW1FbmREYXRlIjoiMjAyMC0xMi0zMSJ9LCJwYXJhbXMiOnsidGhyZXNob2xkIjozMCwidmlzaWJpbGl0eSI6dHJ1ZX19XX0%3D&scrollTo=treeLossGlobal&showMap=false&treeLossPct=eyJoaWdobGlnaHRlZCI6ZmFsc2V9&widget=treeLossGlobal)
+
+
+
+
+## Trouble shooting
+### installation of dependencies
+In case have miniconda installed or created a minimal environment you might need to install necessary libraries
+Make sure are in the right environment with
+```conda info --envs ``` and then activate the environment you want to use ``` conda activate <YOUR_ENV> ``` 
+Using conda
+```
+conda install --file requirements.txt
+```
+
+Using pip
+
+Activate you virtual env before, then install the requirements.
+```
+pip install -r requirements.txt
+```
+
